@@ -2,6 +2,65 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-/* write your CSS here */
+:root{
+    --black: #191b1d;
+    --dark-gray: #22262c;
+    --pink: #bc1e4a;
+}
+
+body{
+    background-color: var(--black);
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.price-card{
+    background-color: var(--dark-gray);
+    border-radius: 10px;
+    padding: 20px 40px;
+}
+
+#pricing{
+    color: white;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+}
+
+.card-header{
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align:center;
+    font-weight: 250;
+}
+.card-price{
+    font-size:34px;
+    text-align:center;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+.month{
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+ul{
+    list-style: none; /* remove default bullets */
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 750px){
+    #pricing{
+        grid-template-columns: 1fr;
+        gap:10px;
+    }
+}
