@@ -15,12 +15,19 @@ body{
     background-color: var(--black);
     max-width: 90%;
     margin: 0 auto;
+    color: white;
+
+}
+.title{
+    text-align: center;
+    margin: 60px o;
 }
 
 .price-card{
     background-color: var(--dark-gray);
     border-radius: 10px;
     padding: 20px 40px;
+    text-align: center;
 }
 
 #pricing{
@@ -39,7 +46,7 @@ body{
 .card-price{
     font-size:34px;
     text-align:center;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     font-weight: bold;
 }
 .month{
@@ -49,16 +56,38 @@ body{
 }
 ul{
     list-style: none; /* remove default bullets */
+    margin-bottom: 20px;
+}
+li{
+    margin-bottom: 15px;
+}
+ul li::before{
+    content:"\2022"; /* adding content, the 2022 is the CSS code for a bullet*/
+    color: var(--pink);
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+button{
+    border: 1px solid var(--pink);
+    padding: 12px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: inherit;
+    color: white;
+}
+
+button:hover{
+    background-color: var(--pink);
 }
 
 
 
 
 
-
-
-
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 900px){
     #pricing{
         grid-template-columns: 1fr;
         gap:10px;
