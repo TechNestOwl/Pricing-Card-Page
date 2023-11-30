@@ -5,4 +5,4 @@ Goals:
 - Fully responsive design 
 
 
-https://github.com/TechNestOwl/Pricing-Card-Page/blob/main/Pricing_page.png
+https://raw.githubusercontent.com/TechNestOwl/Pricing-Card-Page/main/Pricing_page.png
